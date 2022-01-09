@@ -69,7 +69,14 @@
 			<label for="domains">Nhập tên miền mà bạn cần kiểm tra</label>
 			<textarea class="form-control" x-model="domains" rows="5" :class="error && 'is-invalid'" required></textarea>
 			<small id="passwordHelpBlock" class="form-text" :class="error ? 'invalid-feedback' : 'text-muted'">
-				Có thể nhập mỗi tên một hàng để kiểm tra nhiều tên miền
+				Có thể nhập mỗi tên một hàng để kiểm tra nhiều tên miền. Chỉ cần nhập tên vào ô không cần gõ .com hay .net <br>
+				Giá tên miền đăng ký mới: <b>98.000đ</b> năm đầu, gia hạn các năm tiếp theo <b>70.000đ</b> <br>
+				Truy cập vào website <a href="https://tiep.vn/Ch-ng-trinh-dang-ky-ten-mi-n-com-net-org-danh-cho-qu-ng-h-vi-ng-i" target="_blank"><b>Chương trình đăng ký tên miền .com .net .org dành cho quỹ ủng hộ vì người khuyết tật.</b></a>, địa chỉ liên lạc <a href="https://facebook.com/tiepcreator" target="_blank"><b>Facebook.com/Tiep</b></a> nếu muốn đăng ký trực tiếp. <br>
+				Điện thoại / <a href="https://zalo.me/0337036819" target="_blank"><b>Zalo 0337036819</b></a>, áp dụng cả nhắn tin và gọi điện thoại <br>
+				Thanh toán chuyển khoản ngân hàng tới <br>
+				Ngân hàng Ngân hàng TNHH MTV <b>CIMB</b> Việt Nam <br>
+				Số tài khoản: <b>00336500201403</b> <br>
+				Chủ tài khoản: <b>Phạm Xuân Tiếp</b>
 			</small>
 		</div>
 		<div class="form-group">
@@ -127,7 +134,7 @@
 				// domainexts: ['com','net','org','in','biz','org.uk','co.uk','co.in'],
 				domainexts: ['com','net','org'],
 				result: '',
-				header: "<table class='table mb-0 table-sm mt-5'><thead><tr><th class='dnth'>Domain Name</th><th>Availability</th></tr></thead></table>",
+				header: "<table class='table mb-0 table-sm mt-5'><thead><tr><th class='dnth'>Tên miền</th><th>Có thể đăng ký không?</th></tr></thead></table>",
 				dosearch() {
 					this.loading = true;
 					this.error = false;
