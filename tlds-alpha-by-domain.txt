@@ -3,3 +3,5 @@ COM
 NET
 ORG
 IN
+NL
+BIZ
